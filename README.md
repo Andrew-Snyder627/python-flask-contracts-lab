@@ -34,6 +34,7 @@ Build the following routes:
 #### App Routes:
 
 - `GET /contract/<id>`
+
   - **200**: Contract found — return contract information.
   - **404**: Contract not found.
 
@@ -66,7 +67,7 @@ Build the following routes:
 
 ## Tools and Resources
 
-- **GitHub Repo**: *Link to be provided*
+- **GitHub Repo**: _Link to be provided_
 - **Flask Quickstart**: [https://flask.palletsprojects.com/en/stable/quickstart/](https://flask.palletsprojects.com/en/stable/quickstart/)
 
 ---
@@ -78,6 +79,7 @@ Build the following routes:
 Before coding:
 
 1. **Fork and Clone**
+
    - Go to the provided GitHub repository link.
    - Fork the repository to your GitHub account.
    - Clone the forked repository to your local machine.
@@ -103,6 +105,7 @@ Build the following routes:
 #### App Routes:
 
 - `/contract/<id>`
+
   - **200**: Contract found — return information
   - **404**: Contract not found
 
@@ -147,3 +150,20 @@ Build the following routes:
 - Delete stale branches on GitHub.
 - Remove unnecessary or commented-out code.
 - Update `.gitignore` if needed to exclude sensitive data
+
+## Completed Functionality
+
+- `/contract/<id>` route:
+
+  - Returns contract info with 200 if found
+  - Returns 404 if not found
+
+- `/customer/<customer_name>` route:
+  - Returns 204 (no content) if customer exists
+  - Returns 404 if customer is not found
+
+All tests pass successfully.
+
+### Tested Routes Results
+
+![Requests and Status Codes](images/tested-routes.png)
